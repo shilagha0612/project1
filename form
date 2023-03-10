@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form for html</title>
+
+</head>
+
+<body>
+    <div>
+    <label for="name"> Name</label>
+    <input type="text" name="myName" id="name">
+    <br>
+    <br>
+    </div>
+    <div>
+        <label for="Role"> Role</label>
+        <input type="text" name="myRole" id="Role">
+        <br>
+        <br>
+        </div>
+        <div>
+            <label for="email"> Email</label>
+            <input type="email" name="myEmail" id="email">
+            <br>
+            <br>
+            </div>
+            <div>
+                <label for="date"> Date</label>
+                <input type="date" name="myDate" id="date">
+                <br>
+                <br>
+                </div>
+                <div>
+                    <label for="bonus"> bonus</label>
+                    <input type="number" name="myBonus" id="bonus">
+                    <br>
+                    <br>
+                    </div>
+                    <div>
+                        <label for="car">Choose your Favourite ride</label>
+                        <select name="myCar" id="car">
+                            <option value="honda">honda</option>
+                            <option value="bmw">bmw</option>
+                            <option value="audi">audi</option>
+
+
+                        </select>
+                        <br>
+                        <br>
+                        </div>
+                       
+                    
+                        <label for="Eligible"> Are you Eligible</label>
+                        <input type="checkbox" name="Eligibility" id="Eligible">
+                        <br>
+                        <br>
+                        <div>
+                        <label for="youself">About your self</label>
+                        <textarea name="myText" cols="3https://github.com/shilagha0612/project1/actions0" rows="10" Id="yourself"></textarea>
+                    </div>
+                    <br>
+                        <br>
+                        <div>
+                        <label for="submit">submit</label>
+                        <button onclick= "add()"> Click</button>
+                        <p id="result"></p>
+                    </div>
+                    <script type="text/javascript">
+                        function add(){
+                            const name = document.getElementById("name").value;
+                            const role = document.getElementById("Role").value
+                            const Email = document.getElementById("email").value
+                            const Bonus = document.getElementById("bonus").value
+                            
+                            multi=(name+" "+role+" "+Email+" "+ Bonus);
+                            console.log(multi)
+                            document.getElementById("result").innerHTML= multi;
+                        }
+                     
+
+                    </script>
+                        
+                        
+
+    
+
+
+    
+</body>
+</html>
